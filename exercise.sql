@@ -23,9 +23,12 @@ SHOW TABLES;
 -- INSERT INTO informatie (naam, diameter, `afstand tot de zon`, `massa tot de aarde`) VALUES ('Mars', 142.984, 778312010, 317);
 -- INSERT INTO informatie (naam, diameter, `afstand tot de zon`, `massa tot de aarde`) VALUES ('Zon', 1400000, 628312010, 140);
 
-alter table informatie MODIFY `naam` varchar(15) NOT NULL;
-alter table informatie MODIFY `diameter` int(10) NOT NULL;
-alter table informatie MODIFY `massa tot de aarde` int(10) NOT NULL;
-alter table informatie MODIFY `afstand tot de zon` int(15) NOT NULL;
-alter table informatie MODIFY `bezoek_datum` int(0) NULL;
+-- alter table informatie MODIFY `naam` varchar(15) NOT NULL;
+-- alter table informatie MODIFY `diameter` int(10) NOT NULL;
+-- alter table informatie MODIFY `massa tot de aarde` int(10) NOT NULL;
+-- alter table informatie MODIFY `afstand tot de zon` int(15) NOT NULL;
+-- alter table informatie MODIFY `bezoek_datum` int(0) NULL;
+-- describe informatie;
+
+ALTER TABLE informatie ADD id MEDIUMINT NOT NULL AUTO_INCREMENT PRIMARY KEY;
 describe informatie;
